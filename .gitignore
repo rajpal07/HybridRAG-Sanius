@@ -1,0 +1,51 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Tooling and editor configs
+.claude/
+.omc/
+.omx/
+.idea/
+.vscode/
+
+# Python build / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific docs and artefacts
+CLAUDE.md
+docs/
+doc_pdf/
+hybridrag_sanius_architecture.svg
+AI_Architecture_Response.pdf
+
+# Local DB / debug scripts and dumps
+db_check.py
+db_out.txt
+test_db.py
+test_db*.py
+test_resp.json
+test_resp*.json
+
+# Large source data — pulled locally, not committed
+data/raw/
+data/processed/
+
+# Logs
+*.log
+logs/

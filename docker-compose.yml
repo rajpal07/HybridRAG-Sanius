@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: sanius_postgres
+    environment:
+      POSTGRES_DB: sanius
+      POSTGRES_USER: sanius
+      POSTGRES_PASSWORD: sanius
+    ports:
+      - "5432:5432"
+    volumes:
+      - sanius_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sanius -d sanius"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  sanius_pgdata:
