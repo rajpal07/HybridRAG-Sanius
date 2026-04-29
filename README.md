@@ -173,6 +173,4 @@ python scripts/doctor.py
 
 Validates database connectivity, model providers, embedding endpoint, and PHI redactor.
 
-## License
 
-Specify your licence here.
