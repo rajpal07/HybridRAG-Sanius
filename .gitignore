@@ -41,7 +41,6 @@ test_db.py
 test_db*.py
 test_resp.json
 test_resp*.json
-test.ps1
 
 # Large source data — pulled locally, not committed
 data/raw/
